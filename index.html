@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="wrapper">
+        <h1 class="main-heading">Payment Form</h1>
+        <form>
+            <section class="account-info">
+               <h2>Account</h2>
+               <div class="input-group">
+                    <!--first name -->
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="First Name" >
+                        <i class="fa-solid fa-user icon"></i>
+                    </div>
+                    <!-- last name -->
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Last Name" >
+                        <i class="fa-solid fa-user icon"></i>
+                    </div>
+               </div>
+               <div class="input-group">
+                    <!-- email -->
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Email Address" required>
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="personal">
+                <div class="input-group">
+                    <!-- date of birth -->
+                    <div class="input-box">
+                        <h2>Date of Birth</h2>
+                        <div class="dob">
+                            <input type="text" name="" class="input-field" placeholder="DD">
+                            <input type="text" name="" class="input-field" placeholder="MM">
+                            <input type="text" name="" class="input-field" placeholder="YYYY">
+                        </div>
+                    </div>
+                    <!-- gender details -->
+                    <div class="input-box">
+                        <h2>Gender</h2>
+                        <div class="gender">
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="payment-details">
+                <h2>Payment Details</h2>
+                <div class="input-group">
+                    <!-- payment options -->
+                    <div class="input-box radio">
+                        <input type="radio" name="payment" id="credit" checked>
+                        <label for="credit">
+                            <i class="fa-brands fa-cc-visa"></i> Credit Card
+                        </label>
+                        <input type="radio" name="payment" id="paypal">
+                        <label for="paypal">
+                            <i class="fa-brands fa-cc-paypal"></i> Paypal
+                        </label>
+                    </div>
+                </div>
+                <!-- card number -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Card Number" required>
+                        <i class="fa-regular fa-credit-card icon"></i>
+                    </div>
+                </div>
+                <!-- card info  -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Card CVV" >
+                        <i class="fa-solid fa-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="month" placeholder="Exp Date" class="input-field">
+                        <i class="fa-solid fa-calendar-days icon"></i>
+                    </div>
+                </div>
+                <!-- pay now button -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="submit" value="Pay Now" class="input-field btn">
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html> 
